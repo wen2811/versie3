@@ -1,0 +1,23 @@
+.outer-container {
+    background-image: url('../../assets/homeheader.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    padding-top: 100%; /* Set the outer container to be square by maintaining a 1:1 aspect ratio */
+    position: relative;
+}
+
+.inner-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.8); /* White background with some transparency */
+    padding: 20px;
+    text-align: center;
+}
+
+.text {
+    font-size: 24px;
+    color: #333; /* Adjust the text color as needed */
+}
