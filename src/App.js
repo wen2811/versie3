@@ -10,35 +10,32 @@ import Footer from "./components/footer/Footer";
 
 
 function App() {
-  return (
-      <>
-    <div className="body">
-        <Navigation />
-        <Routes>
-            <Route exact path="/">
-                <Home/>
-            </Route>
-            <Route path="/treatments">
-                <Treatments/>
-            </Route>
-            <Route path="/prices" >
-                <Pricing/>
-            </Route>
-            <Route path="/ourStory">
-                <OurStory/>
-            </Route>
-            <Route path="/contact">
-                <Contact/>
-            </Route>
-        </Routes>
-        <Footer/>
-    </div>
-
-</>
-);
+    return (
+        <>
+            <div className="body">
+                <Navigation />
+                <Routes>
+                    <Route exact path="/" element={<Home />} />
+                    <Route path="/treatments" element={<Treatments />} />
+                    <Route path="/prices" element={<Pricing />} />
+                    <Route path="/ourStory" element={<OurStory />} />
+                    <Route path="/contact" element={<Contact />} />
+                </Routes>
+                <Footer />
+            </div>
+        </>
+    );
 }
 
-
-
-
 export default App;
+
+
+
+
+
+
+
+
+
+
+

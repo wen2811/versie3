@@ -8,7 +8,6 @@ import home from '../../assets/homeheader.jpg';
 function Home() {
     return (
         <>
-            <Navigation />
             <div className="mycontainer">
                 <div className="content">
                     <img alt="Relaxing massage" src={home} />
