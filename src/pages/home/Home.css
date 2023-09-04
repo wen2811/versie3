@@ -6,6 +6,10 @@
     bottom: 0;
     overflow: hidden;
 }
+
+.content{
+    width: 100%;
+}
 & > .info { /* Use & to target direct children with class "info" */
     position: absolute;
     bottom: -6rem;

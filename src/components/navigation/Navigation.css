@@ -1,0 +1,84 @@
+/* Navbar.css */
+
+/* Shared styles for both mobile and desktop */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff; /* Background color for the navigation bar */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
+}
+
+.logo img {
+    max-width: 40px;
+    height: 20px;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px; /* Gap between menu items */
+}
+
+.menu li {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.actions {
+    display: flex;
+    gap: 15px;
+}
+
+
+.menu-icon {
+    display: none;
+    cursor: pointer;
+}
+
+.menu.open {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    padding: 10px;
+}
+
+
+.menu-icon.open .bar:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.menu-icon.open .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-icon.open .bar:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+
+@media (max-width: 768px) {
+    .menu {
+        display: none;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+    .logo img{
+        position: initial;
+    }
+}
+
