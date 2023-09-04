@@ -6,12 +6,13 @@ import Treatments from "./pages/treatments/Treatments";
 import Pricing from "./pages/pricing/Pricing";
 import OurStory from "./pages/ourStory/OurStory";
 import Contact from "./pages/contact/Contact";
+import Footer from "./components/footer/Footer";
 
 
 function App() {
   return (
       <>
-    <div className="App">
+    <div className="body">
         <Navigation />
         <Routes>
             <Route exact path="/">
@@ -30,6 +31,7 @@ function App() {
                 <Contact/>
             </Route>
         </Routes>
+        <Footer/>
     </div>
 
 </>
