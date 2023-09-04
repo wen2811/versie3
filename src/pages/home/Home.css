@@ -1,0 +1,34 @@
+.myContainer{
+    width: 20%; /* Set the width to cover a fifth of the page horizontally */
+    position: absolute;
+    top: 60px; /* Adjust this value to position it below the navbar/menu */
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+}
+& > .info { /* Use & to target direct children with class "info" */
+    position: absolute;
+    bottom: -6rem;
+    right: 0;
+    background-color: whitesmoke;
+    padding: 4rem;
+}
+
+& > .grid { /* Use & to target direct children with class "grid" */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4rem;
+    color: #fff;
+}
+
+@media screen and (min-width: 280px) and (max-width: 1080px) {
+    & > .info { /* Use & to target direct children with class "info" */
+        position: initial;
+    }
+
+    & > .grid { /* Use & to target direct children with class "grid" */
+        grid-template-columns: 1fr;
+    }
+
+}
+
